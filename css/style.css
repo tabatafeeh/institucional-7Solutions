@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p, span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 74px;
+    background-color: black;
+    padding-top: 7px;
+    /* border-bottom: #FFDE59 solid 1px; */
+    position: fixed;
+}
+
+header a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+/* BOTOES */
+.btn-amarelo{
+    width: 35%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FFDE59;
+    border: none;
+}
+
+.btn-azul{
+    width: 47%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 25px;
+    color: white;
+    background-color: #3F7BFB;
+    border: none;
+}
+
+/* MENU */
+.container{
+    width: 93%;
+    height: 60px;
+    margin: auto;
+}
+
+.logo img{
+    width: 70px;
+    float: left;
+}
+
+.nav {
+    float: right;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+/* INICIO */
+.inicio{
+    width: 100%;
+    /* background-color: blue; */
+    background-image: url(../img/fundoMaisEscuro.jpg);
+    background-size: cover;
+    min-height: 670px;
+}
+
+.inicio .content{
+    padding-top: 120px;
+    padding-left: 130px;
+}
+
+.inicio img{
+    width: 45px;
+    margin-left: 48.5%;
+    margin-bottom: -75px;
+}
+
+.texto-inicio{
+    padding-top: 100px;
+    width: 45%;
+    min-height: 300px;
+}
+
+.texto-inicio p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 58px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* SOBRE NÓS */
+.sobre .content{
+    background-color: black;
+    height: 650px;
+    width: 100%;
+}
+
+.sobre .direita{
+    width: 50%;
+    height: 100%;
+    background-color: #FFDE59;
+    float: right;
+}
+
+.sobre img{
+    width: 500px;
+    float: left;
+    margin-top: 250px;
+    margin-left: 80px;
+}
+
+.sobre .direita .titulo{
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.texto-sobre{
+    width: 72%;
+    height: 80%;
+    margin: auto;
+    /* background-color: aqua; */
+}
+
+.texto-sobre p{
+    font-size: 22px;
+    text-align: justify;
+}
+
+/* EQUIPE */
+.equipe{
+    width: 100%;
+    height: 570px;
+    /* background-image: linear-gradient(to bottom, #403716, black); */
+    background-color: #1d180a;
+    padding-top: 120px;
+}
+
+.equipe .content{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+/* div com a imagem e legenda */
+.equipe .content .item{
+    width: 15%;
+    display: inline-block;
+    margin-left: 110px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #FFDE59;
+}
+
+/* Imagens da equipe */
+.equipe .content .item img{
+    width: 100%;
+    border-radius: 100%;    
+}
+
+.orcamento{
+    background-color: #FFDE59;
+    width: 100%;
+    height: 570px;
+    padding-top: 100px;
+}
+
+.calculadora{
+    width: 30%;
+    height: 90%;    
+    background-color: white;
+    margin-left: 10%;
+    float: left;
+}
+
+.orcamento .direita{
+    width: 42%;
+    height: 90%;
+    /* background-color: #a89a6a; */
+    float: right;
+    margin-right: 10%;
+}
+
+.txt-orcamento{
+    text-align: center;
+    width: 100%;
+    height: 87%;
+    
+}
+
+.txt-orcamento span{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.txt-orcamento p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.contato{
+    width: 100%;
+    height: 670px;
+    background-color: #111;
+}
+
+.contato .form{
+    width: 30%;
+    height: 300px;
+    /* background-color: khaki; */
+    float: right;
+    margin-top: 150px;
+    margin-right: 100px;
+}
+
+.contato form input{
+    width: 90%;
+    margin-bottom: 11px;
+    height: 35px;
+
+}
+
+.contato form textarea{
+    width: 90.5%;
+    height: 180px;
+    resize: vertical;
+}
+
+.contato form button{
+    margin: 11px 0;
+    width: 91%;
+    height: 70px;
+
+}
+
+.esquerda {
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    float: left;
+}
