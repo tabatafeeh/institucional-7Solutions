@@ -87,7 +87,16 @@
 
     <div class="orcamento" id="orcamento">
         <div class="calculadora">
+            <p class="calc-valor">Calcular valor</p>
+            <input type="text" id="qtdSilos" placeholder="Digite a quantidade de silos">
+            <input type="text" id="utilizacao" placeholder="Digite o período de utilização">
+            <br><br>
+            <button onclick="calcular()">Calcular</button>
+            <br><br>
+            <div class="resposta">
+                <p id="tot"></p> 
 
+            </div>
         </div>
         <div class="direita">
             <div class="txt-orcamento">
@@ -105,17 +114,45 @@
     </div>
 
     <div class="contato" id="contato">
-        <div class="esquerda"></div>
+        <div class="esquerda">
+            <div class="info">
+                <p><b>Endereço:</b> Rua Haddock Lobo, 595 - Cerqueira César, São Paulo - SP, 01414-001</p>
+                <br>
+                <p><b>Email:</b> sevensolutions@gmail.com</p>
+                <br>
+                <p><b>Telefone:</b> (11) 4002-8922</p>
+                <br><br><br>
+                <a href="#contato"><img src="img/whatsapp.png" alt=""></a>
+                <a href="#contato"><img src="img/linkedin.png" alt=""></a>
+            </div>
+        </div>
         <div class="form">
             <form action="#contato">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="e-mail">
+                <input type="text" placeholder="Assunto">
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Digite a sua mensagem aqui!"></textarea>
                 <button class="btn-azul">Enviar</button>
             </form>
+            <br><br>
+            <p>© Copyright 2020 | Todos os direitos reservados </p>
         </div>
     </div>
+
+    <script>
+        function calcular(){
+            var silo = Number(qtdSilos.value);
+            var periodo = Number(utilizacao.value);
+            var totalAproximado = (silo * 400.0) + (periodo * 1800.0);
+            var economia = 50000
+            tot.innerHTML = `O valor aproximado para a implementação e manutenção 
+                            do sistema é de R$${totalAproximado.toFixed(2)}. Com isso, você 
+                            pode economizar até R$${economia.toFixed(2)} num período de 6 meses. <br><br>
+                            <p><b>*O valor calculado é estimado de acordo com a nossa regra de 
+                            negócio. Caso queira mais informações, sugerimos
+                            entrar em contato conosco via e-mail ou telefone.</b></p>`;
+        }
+    </script>
 
 </body>
 </html>
